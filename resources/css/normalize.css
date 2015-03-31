@@ -79,7 +79,7 @@ button,
 input,
 select,
 textarea {
-    font-family: sans-serif;
+    font-family: "Hiragino Sans GB","Microsoft YaHei","微软雅黑",tahoma,arial,simsun,"宋体";
 }
 
 /**
@@ -99,16 +99,20 @@ body {
  */
 
 a:focus {
-    outline: thin dotted;
+    outline: none;
 }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-
+a,
 a:active,
+a:link,
+a:visited ,
 a:hover {
     outline: 0;
+    text-decoration:none;
+    color: #B5B0B0;
 }
 
 /* ==========================================================================
