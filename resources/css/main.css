@@ -92,8 +92,8 @@ textarea {
 
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
-    /*-webkit-backface-visibility: hidden;*/
-    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    /*-webkit-perspective: 1000;*/
 }
 .wrapper {
     width: 90%;
@@ -104,10 +104,10 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    /*border-bottom: 20px solid #e44d26;*/
 }
 .footer-container, .main aside {
-    border-top: 20px solid #e44d26;
+    /*border-top: 20px solid #e44d26;*/
 }
 .header-container, .footer-container, .main aside {
     background: transparent;
@@ -206,9 +206,9 @@ nav a:hover {
    ==================== */
     
     .header-container, .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
+        /*-webkit-box-shadow: 0 5px 10px #aaa;
         -moz-box-shadow: 0 5px 10px #aaa;
-        box-shadow: 0 5px 10px #aaa;
+        box-shadow: 0 5px 10px #aaa;*/
     }
     /* ============
     WIDE: Menu

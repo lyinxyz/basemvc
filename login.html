@@ -24,72 +24,200 @@
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-    <div class="header-container" id="header-container">
-        <header class="clearfix">
-            <div id="m-bg-header" class="focuspoint bg-filter" 
-                data-focus-x="0" data-focus-y="0" data-image-w="1000" data-image-h="625" >
-                <img src="resources/img/header/1.jpg" alt="" />
-            </div>
-        </header>
-        <div id="" class="m-wraper">
-            <div class="m-logo">
-                <h1 class="gradient-3d-text"><span>Vacation</span></h1>
-            </div>
-            <div class="m-region">
-                <div class="m-links clearfix">
-                    <a href="##" class="m-link crt">
-                        <span class="regtext">注册</span>
-                        <span class="regad">
-                            <i class="m-sep">&nbsp;</i>
-                            <span>
-                                <i>XXXX</i>
-                                <i>XXXX</i>
-                            </span>
-                            <em class="m-icon">&nbsp;</em>
-                        </span>
-                    </a>
-                    <a href="##" class="m-link">登录</a>
-                    <a href="##" class="m-link">下载</a>
+    <!--loading start-->
+    <div id="m-loading" class="transitionlayer">
+        <div id="loader-wrapper" class="bg-filter"></div>
+        <div class="loader">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="subline"></div>
+            <div class="subline"></div>
+            <div class="subline"></div>
+            <div class="subline"></div>
+            <div class="subline"></div>
+            <div class="loader-circle-1"><div class="loader-circle-2"></div></div>
+            <div class="needle"></div>
+            <div class="loading">Loading</div>
+        </div>
+    </div>
+    <!--loading start-->
+    <!--main layer start-->
+    <div class="transitionlayer" id="m-main">
+        <div class="header-container" id="header-container">
+            <!--header bg layer start-->
+            <header class="clearfix">
+                <div id="m-bg-header" class="focuspoint bg-filter" 
+                    data-focus-x="0" data-focus-y="0" data-image-w="1000" data-image-h="625" >
+                    <img src="resources/img/header/1.jpg" alt="" />
                 </div>
-                <div id="" class="m-re-form">
-                    <div class="m-login">
-                        <form name="login" action="javascript:void(0);" method="post">
-                            <fieldset class="clearfix">
-                                <div class="m-input"><span class="fontawesome-user"></span>
-                                    <input type="text" value="Username" onBlur="if(this.value == '') this.value = 'Username'" onFocus="if(this.value == 'Username') this.value = ''" required>
-                                </div>
-                                <div class="m-input"><span class="fontawesome-lock"></span>
-                                    <input type="password" value="Password" onBlur="if(this.value == '') this.value = 'Password'" onFocus="if(this.value == 'Password') this.value = ''" required>
-                                </div>
-                                <div class="m-input">
-                                    <input type="submit" value="Sign In">
-                                </div>
-                            </fieldset>
-                        </form>
+            </header>
+            <!--header bg layer start-->
+            <!--header region and login layer start-->
+            <div id="" class="m-wraper">
+                <div class="m-logo">
+                    <h1 class="gradient-3d-text"><span>Vacation</span></h1>
+                </div>
+                <div class="m-header">
+                    <!--header btns layer start-->
+                    <div class="m-links clearfix">
+                        <a href="##" class="m-link crt">
+                            <span class="regtext">注册</span>
+                            <span class="regad">
+                                <i class="m-sep">&nbsp;</i>
+                                <span>
+                                    <i>XXXX</i>
+                                    <i>XXXX</i>
+                                </span>
+                                <em class="m-icon">&nbsp;</em>
+                            </span>
+                        </a>
+                        <a href="##" class="m-link">登录</a>
+                        <a href="##" class="m-link">下载</a>
+                    </div>
+                    <!--header btns layer end-->
+                    <div id="" class="m-form clearfix">
+                        <!--header region layer start-->
+                        <div class="m-layer m-region clearfix display">
+                            <form name="login" action="javascript:void(0);" method="post">
+                                <fieldset class="clearfix">
+                                    <div class="m-input"><span class="fontawesome-user"></span>
+                                        <input type="text" placeholder="用户名/邮箱" required>
+                                    </div>
+                                    <div class="m-input"><span class="fontawesome-lock"></span>
+                                        <input type="password" placeholder="密码"  required>
+                                    </div>
+                                    <div class="m-input">
+                                        <input type="submit" value="注册">
+                                    </div>
+                                </fieldset>
+                            </form>
+                            <span class="sep-v-line"></span>
+                            <span class="sep-v-text">或</span>
+                            <ul class="m-re-oth">
+                                <li class="m-re-oth-l">
+                                    <i></i>
+                                    <button id="" class="header-btn">新浪微博注册</button>
+                                </li>
+                                <li class="m-re-oth-l">
+                                    <i></i>
+                                    <button id="" class="header-btn">腾讯QQ注册</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--header region layer end-->
+                        <!--header login layer start-->
+                        <div class="m-layer m-login clearfix">
+                            <form name="login" action="javascript:void(0);" method="post">
+                                <fieldset class="clearfix">
+                                    <div class="m-input"><span class="fontawesome-user"></span>
+                                        <input type="text" placeholder="用户名/邮箱" required>
+                                    </div>
+                                    <div class="m-input"><span class="fontawesome-lock"></span>
+                                        <input type="password" placeholder="密码"  required>
+                                    </div>
+                                    <div class="m-input">
+                                        <input type="submit" value="登录">
+                                    </div>
+                                </fieldset>
+                            </form>
+                            <span class="sep-v-line"></span>
+                            <span class="sep-v-text">或</span>
+                            <ul class="m-re-oth">
+                                <li class="m-re-oth-l">
+                                    <i></i>
+                                    <button id="" class="header-btn">新浪微博登录</button>
+                                </li>
+                                <li class="m-re-oth-l">
+                                    <i></i>
+                                    <button id="" class="header-btn">腾讯QQ登录</button>
+                                </li>
+                                <li class="m-re-oth-l">
+                                    <i></i>
+                                    <button id="" class="header-btn">XXXXXXX登录</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--header login layer start-->
+                        <div class="m-layer m-app clearfix">
+                            <ul class="m-re-oth clearfix">
+                                <li class="m-re-oth-l">
+                                    <i class="header-icon">IOS</i>
+                                    <button id="" class="header-btn">XXXXXXXXXXX下载</button>
+                                </li>
+                                <li class="m-re-oth-l">
+                                    <i class="header-icon">Andriod</i>
+                                    <button id="" class="header-btn">XXXXXXXXXXX下载</button>
+                                </li>
+                                <li class="m-re-oth-l">
+                                    <i class="header-icon">WinPhone</i>
+                                    <button id="" class="header-btn">XXXXXXXXXXX下载</button>
+                                </li>
+                            </ul>
+                            <img src="resources/img/header/2.png" height="" width="" alt="" class="qrcCode">
+                        </div>
+                        <!--header login layer end-->
+                        <div id="m-ad" class="m-ad clearfix">
+                            <p>This is AD area!</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!--header region and login layer end-->
+        </div>
+
+        <div class="main-container main-in">
+            <div class="page page1">
+                <div class="m-items-liner">
+                    <ul class="liner-items">
+                        <li class="item"></li>
+                        <li class="item"></li>
+                        <li class="item"></li>
+                        <li class="item"></li>
+                        <li class="item"></li>
+                        <li class="item"></li>
+                        <li class="item"></li>
+                        <li class="item"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page page2">
+            </div>
+            <div class="page page3">
+            </div>
+            <div class="page page4">
+            </div>
+            <!-- #main -->
+        </div>
+        <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <h3>footer</h3>
+            </footer>
         </div>
     </div>
-
-    <div class="main-container">
-        <div class="main wrapper clearfix">
-    
-           
-
-        </div>
-        <!-- #main -->
+    <div id="main-share">
+        <a href="##" data-linkel="#wheel" class="wheel-button"><i class="customicon-plus">+</i></a>
+        <ul id="wheel">
+            <li class="item"><a href="#home"><i class="customicon-home"></i></a></li>
+            <li class="item"><a href="#home"><i class="customicon-music"></i></a></li>
+            <li class="item"><a href="#home"><i class="customicon-video"></i></a></li>
+            <li class="item"><a href="#home"><i class="customicon-heart"></i></a></li>
+            <li class="item"><a href="#home"><i class="customicon-user"></i></a></li>
+            <li class="item"><a href="#home"><i class="customicon-trash"></i></a></li>
+            <li class="item"><a href="#home"><i class="customicon-envelope"></i></a></li>
+            <li class="item"><a href="#home"><i class="customicon-camera"></i></a></li>
+            <li class="item"><a href="#home"><i class="customicon-picture"></i></a></li>
+            <li class="item"><a href="#home"><i class="customicon-eye-open"></i></a></li>
+        </ul>
     </div>
-    <!-- #main-container -->
-
-    <div class="footer-container">
-        <footer class="wrapper">
-            <h3>footer</h3>
-        </footer>
-    </div>
-
+    <!--main layer end-->
     <script src="js/libs/jquery-1.11.1.js"></script>
+    <script src="js/libs/jquery.wheelmenu.js"></script>
     <script>
         window.jQuery || document.write('<script src="js/libs/jquery-1.11.1.js"><\/script>')
     </script>
@@ -101,10 +229,22 @@
                 $('.focuspoint').focusPoint();
             });
 
-            $(".m-region .m-link").click(function(){
+            $(".m-links .m-link").click(function(){
                 var _link = $(this);
                 _link.siblings().removeClass("crt").end().addClass("crt");
+                $(".m-layer").eq(_link.index()).siblings().removeClass("display").end().addClass("display");
 
+            });
+
+            $(".wheel-button").wheelmenu({
+                trigger: "click",
+                animation: "fly",
+                animationSpeed: "fast"
+            });
+
+            $("#m-loading").animate({
+                opacity:0,
+                zIndex:-1
             });
         }(jQuery));
     </script>
